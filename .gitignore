@@ -1,0 +1,18 @@
+# KiCad — arquivos gerados / estado local (não versionar)
+*.kicad_prl
+*-backups/
+fp-info-cache
+*.bak
+*~
+_autosave-*
+*.lck
+\#auto_saved_files#
+
+# Saídas de fabricação geradas localmente
+/kicad/gerbers/
+/kicad/*.net
+
+# Sistema operacional
+Thumbs.db
+.DS_Store
+desktop.ini

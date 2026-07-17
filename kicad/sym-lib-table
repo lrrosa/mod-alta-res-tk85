@@ -1,0 +1,5 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "2364_rom")(type "KiCad")(uri "${KIPRJMOD}/sym/2364_rom.kicad_sym")(options "")(descr "ROM 2364 (custom, on-grid)"))
+  (lib (name "6116_sram")(type "KiCad")(uri "${KIPRJMOD}/sym/6116_sram.kicad_sym")(options "")(descr "SRAM 6116 (custom, on-grid)"))
+)
