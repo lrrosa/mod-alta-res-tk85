@@ -56,14 +56,15 @@ Descrição detalhada em [`docs/descricao-circuito.md`](docs/descricao-circuito.
 
 ## Errata
 
-O esquema publicado no artigo tem alguns erros, já **corrigidos** aqui. Não os
+O artigo tem alguns erros, omissões e ambiguidades, já **corrigidos** aqui. Não os
 "desfaça" comparando com a revista. Detalhes em
 [`docs/correcoes-errata.md`](docs/correcoes-errata.md). Em resumo:
 
-- `/WE` das 6116 → `WR` do Z80 (pino 22); `/OE` das 6116 → GND.
+- `/WE` das 6116 → `WR` do Z80 (pino 22); `/OE` das 6116 → GND (omissão do artigo).
 - Trimpot de 15–22 K no reset dos dois 74LS93 (`RV1`).
 - Pino 9 do primeiro 74LS93 → **pino 5** do 74LS157 (o texto do artigo diz pino 9).
-- **`/CS` da ROM (pino 20 do IC2) ligado à ROM** — estava solto no projeto anterior.
+- `/CS` da ROM (pino 20 do IC2) ligado à ROM `U4` — necessário porque nesta
+  implementação a ROM é remanejada para a placa do mod.
 
 ## Estado do projeto
 

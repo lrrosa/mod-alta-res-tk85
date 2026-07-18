@@ -1,13 +1,31 @@
 # Correções / Errata
 
-O esquema publicado no artigo original (*Alta-Resolução no TK-85*, Milton Maldonado Jr.,
-*Microhobby*) contém alguns erros e ambiguidades. As correções abaixo **já estão
+O artigo original (*Alta-Resolução no TK-85*, Milton Maldonado Jr., *Microhobby*)
+contém alguns erros, omissões e ambiguidades. As correções abaixo **já estão
 aplicadas** neste projeto — não as reverta ao comparar com a revista.
 
-## 1. `/WE` e `/OE` das SRAMs 6116
+## 1. `/WE` e `/OE` das SRAMs 6116 (omissão do artigo)
 
 - O `/WE` (pino 21) das três 6116 vai ao **`WR` do Z80 (pino 22 da CPU)**.
 - O `/OE` (pino 20) das três 6116 vai ao **GND**.
+
+**Por que isso não aparece no artigo:** o roteiro de montagem (Parte II) liga os
+pinos 18 das 6116 (`/CS0..2`, na tabela do 74LS138) e os pinos 19 e 22 (`A10'` e
+`A9'`, na tabela do 74LS157), mas não diz o que fazer com os pinos 20 e 21; e o
+"Esquema Completo" (Microhobby, pág. 33) mostra apenas a lógica (74LS157, 74LS138 e
+os dois 74LS93) — as 6116 não aparecem nele. Sem essas duas ligações o circuito não
+funciona: sem `/WE` a CPU nunca escreve no framebuffer, e com `/OE` flutuando a
+leitura fica indefinida.
+
+**Por que estas ligações:** `WR` é o único strobe de escrita do Z80, e a escrita já é
+qualificada chip a chip pelo `/CS` vindo do 74LS138 (que por sua vez só ativa com
+`MREQ` e a janela de endereços A15/A14 correta) — é a forma canônica de pendurar SRAM
+num barramento Z80. `/OE` em GND é seguro pela tabela-verdade da 6116: as saídas só
+habilitam com `/CS`=0 **e** `/WE`=1; chip desselecionado (standby) ou em escrita fica
+em alta impedância (`/OE` é *don't care* na escrita, conforme o datasheet). Como a
+janela das SRAMs não se sobrepõe à da ROM, nunca há dois chips dirigindo o barramento
+ao mesmo tempo, e não é preciso usar o `/RD` (que nem está entre os sinais tomados
+do TK-85).
 
 ## 2. Trimpot de reset (RV1)
 
@@ -30,21 +48,16 @@ corretas, confirmando que o pino 5 é o certo.
 
 Neste projeto: `U6` pino 9 (Q1) → `U7` pino 5 (I0b), na net `VQ1`.
 
-## 4. `/CS` da ROM de caracteres — ligação faltando (novo)
+## 4. `/CS` da ROM de caracteres (montagem em placa)
 
-**Não estava no artigo nem no projeto KiCad anterior.** No projeto anterior, o `/CS` da
-ROM 2364 (pino 20 do IC2) ficava **eletricamente solto**: nem no esquema nem no cobre
-havia ligação ao pino 20.
+Na montagem "teia de aranha" do artigo, a ROM continua no soquete do TK-85 e o pino 20
+dela (`/CS`, gerado pela lógica do próprio TK-85) não é tocado — por isso o artigo não
+fala dele. Nesta implementação em placa, a ROM é remanejada para o soquete `U4` da
+placa do mod, e o `/CS` precisa acompanhá-la: o **pino 20 do soquete do IC2** deve ser
+ligado ao **pino 20 da ROM** (net `CS_ROM`). Sem essa ligação a ROM nunca é
+selecionada e o TK-85 não dá boot.
 
-Isso passou despercebido porque, na montagem "teia de aranha" do artigo, a ROM continua
-no soquete do TK-85 e ninguém mexe no pino 20. Ao migrar para uma placa em que a ROM é
-remanejada, essa ligação passa a ser necessária.
-
-Como o interposer é **pass-through** (o pino do soquete é o mesmo condutor que sobe até a
-ROM), a correção é ligar o pino do soquete que carrega o `/CS` (`IC2_PINS_13_24` pino 5)
-ao pino 20 da ROma `U4` — ambos na net `CS_ROM`. Sem isso, a ROM nunca é selecionada e o
-TK-85 não dá boot.
-
-Confirmação: dos 24 pinos do soquete IC2, 23 seguiam o padrão "pino do soquete = pino da
-ROM"; exatamente esse `/CS` era o único que faltava — assinatura de esquecimento, não de
-intenção de projeto.
+Detalhe de leitura do esquema: o soquete do IC2 é desenhado como dois conectores de 12
+posições. As posições 1–12 de `IC2_PINS_1_12` correspondem aos pinos 1–12 do IC2, e as
+posições 1–12 de `IC2_PINS_13_24` correspondem aos pinos **24–13** (nessa ordem) — o
+`/CS` (pino 20 do IC2) é a posição 5 desse segundo conector.

@@ -21,9 +21,10 @@ listado apenas para atribuição e para quem quiser buscá-lo nas fontes origina
 
 ## Placa hospedeira
 
-- **TK-85 revisão K** — esquema/imagem da placa do TK-85 onde o mod é instalado
-  (referência para localizar os sinais tomados por `J1`: A14, A15, MREQ, RFSH, WR,
-  clock de vídeo e clock de 60 Hz).
+- **TK-85 revisão K** — esquema da placa do TK-85, **redesenhado por Daniel José
+  Viana ("Danjovic")**; não é o esquema original de fábrica. Usado como referência
+  para localizar os sinais tomados por `J1`: A14, A15, MREQ, RFSH, WR, clock de
+  vídeo e clock de 60 Hz.
 
 ## Nota sobre direitos autorais
 
