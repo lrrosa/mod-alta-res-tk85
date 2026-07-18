@@ -20,11 +20,12 @@ comparável à de micros bem mais caros da época.
 mod-alta-res-tk85/
 ├── kicad/                     Projeto KiCad 10
 │   ├── mod_tk85_hires.kicad_sch    Esquema (folha única)
+│   ├── mod_tk85_hires.kicad_pcb    Placa (contorno + posicionamento; sem rotear)
 │   ├── mod_tk85_hires.kicad_pro    Projeto
 │   ├── sym-lib-table               Tabela de símbolos (caminhos ${KIPRJMOD})
 │   └── sym/                        Símbolos personalizados (ROM 2364, SRAM 6116)
 ├── esquemas/                  Esquema exportado (PDF e SVG)
-├── docs/                      Documentação, errata, BOM
+├── docs/                      Documentação, errata, BOM, mecânica
 └── README.md
 ```
 
@@ -71,7 +72,9 @@ O artigo tem alguns erros, omissões e ambiguidades, já **corrigidos** aqui. N�
 - [x] Esquema elétrico em KiCad 10, com ERC limpo (0 erros / 0 avisos)
 - [x] Nets com nomes significativos, desacoplamento e entradas não usadas amarradas
 - [x] BOM ([`docs/bom.csv`](docs/bom.csv))
-- [ ] Layout de PCB
+- [x] PCB: contorno (medido sobre a placa real) e posicionamento — ver
+      [`docs/mecanica.md`](docs/mecanica.md)
+- [ ] PCB: roteamento
 - [ ] Montagem e teste em hardware real
 
 ## Créditos
