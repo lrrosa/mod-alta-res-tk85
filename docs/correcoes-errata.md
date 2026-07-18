@@ -61,3 +61,15 @@ Detalhe de leitura do esquema: o soquete do IC2 é desenhado como dois conectore
 posições. As posições 1–12 de `IC2_PINS_1_12` correspondem aos pinos 1–12 do IC2, e as
 posições 1–12 de `IC2_PINS_13_24` correspondem aos pinos **24–13** (nessa ordem) — o
 `/CS` (pino 20 do IC2) é a posição 5 desse segundo conector.
+
+## 5. Capacitores de desacoplamento — C1 a C10 (acréscimo)
+
+O artigo não prevê nenhum capacitor de desacoplamento — na montagem "teia de aranha",
+os CIs ficam soldados sobre CIs do próprio TK-85 e aproveitam, mal ou bem, o
+desacoplamento da placa hospedeira. Numa placa própria isso deixa de existir, e TTL da
+família LS gera transientes de corrente consideráveis a cada comutação.
+
+Este projeto acrescenta um **100 nF cerâmico por CI** (`C1`–`C9`, junto a cada
+alimentação) e um **eletrolítico de 47 µF** de reserva de carga (`C10`). Ao comparar
+com a revista: esses dez componentes não constam do artigo e **não devem ser
+removidos** — são acréscimo intencional, prática padrão de projeto.

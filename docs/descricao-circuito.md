@@ -77,5 +77,6 @@ Barra de 8 pinos com os sinais tomados de outros pontos da placa do TK-85:
 
 ## Desacoplamento
 
-Um capacitor de 100 nF por CI (`C1–C9`) e um eletrolítico de 47 µF de bulk (`C10`) — não
-constavam do artigo, mas são essenciais para lógica TTL/memórias e boa prática de projeto.
+Um capacitor de 100 nF por CI (`C1–C9`) e um eletrolítico de 47 µF de bulk (`C10`).
+São acréscimo deste projeto em relação ao artigo — ver a seção 5 de
+[`correcoes-errata.md`](correcoes-errata.md).
