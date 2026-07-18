@@ -34,45 +34,33 @@ Tudo é medido em **mm relativos ao centro do IC2** (a ROM principal), com
 
 ## Empilhamento do interposer e teto do gabinete
 
-**Medição no gabinete real (2026-07-18): sobram ~12 mm acima da ROM atual.** Com a
-ROM soldada (~5 mm de altura), o teto útil acima da placa-mãe na região do IC2 é de
-**~17 mm**.
+**Medições no gabinete real (2026-07-18):** sobram **~12 mm** livres tanto acima da
+ROM (IC2) quanto acima dos ICs 30–37. Todos esses CIs estão **soquetados** de
+fábrica (soquetes de lâmina marrons, ~3,5–4 mm — inclusive o IC2 e o 2716), com o
+topo a ~8–9,5 mm da placa-mãe. O teto útil é portanto de **~20–21 mm** em toda a
+região ocupada pela placa do mod.
 
-Vãos por nível de empilhamento (fundo da placa do mod → superfície do TK-85):
+**Pilha adotada** (contorno atual mantido):
 
-| Montagem | Vão sob a placa | Altura total¹ |
-|----------|----------------|----------------|
-| 1 nível (pente torneado + soquete no IC2) | ~6–7 mm | ~12,5–13 mm |
-| 1 nível + 1 soquete extra | ~10–11 mm | ~16,5–17 mm |
-| 2 níveis (2 soquetes extras) | ~13–15 mm | ~20–26 mm |
+| Camada | Altura acumulada sobre a placa-mãe |
+|--------|-----------------------------------|
+| Soquete existente do IC2 (lâmina, de fábrica) | ~3,5–4 mm |
+| Soquete torneado extra (espaçador) | ~7,5–8 mm |
+| Pentes do interposer sob a placa do mod | vão total **~10–11 mm** |
+| Placa do mod (1,6 mm) | ~12–13 mm |
+| CIs do mod **soldados** (~4,5 mm) | topo a **~16,5–17 mm** ✓ |
+| ROM em soquete de lâmina baixo na placa do mod | topo a **~20 mm** — no limite, cabe |
 
-¹ Com os CIs do mod **soldados** (sem soquetes); placa 1,6 mm + CI ~4,5 mm.
-Soquetes na placa do mod acrescentam ~4 mm.
-
-Implicações com o teto de ~17 mm:
-
-- **2 níveis não cabem.** Descartado.
-- **1 nível + 1 soquete extra** (vão ~10–11 mm): passa sobre os ICs 30–37
-  soquetados (~8–9,5 mm) com folga pequena, e fica no limite do teto (~17 mm)
-  **desde que os CIs do mod sejam soldados** (a ROM pode usar soquete de lâmina,
-  baixo). É a opção compatível com o contorno atual da placa.
-- **1 nível simples** (vão ~6–7 mm): altura confortável (~13 mm), mas o corpo da
-  placa **não pode pairar sobre os ICs 30–37** — exigiria redesenhar o contorno
-  para ficar só sobre as áreas baixas (fileira de TTL, faixa norte, campo de
-  resistores a leste).
-
-**Pendente:** o teto de ~17 mm foi medido sobre o IC2. A folga sobre a região sul
-(fileiras IC17… e IC30–37, em direção ao teclado) pode ser diferente — precisa ser
-medida antes de bater o martelo, pois é onde fica o corpo da placa.
-
-Outras notas:
-
+- O vão de ~10–11 mm passa sobre os ICs 30–37 soquetados (~8–9,5 mm) com folga de
+  1–2,5 mm.
+- Os CIs do mod (TTLs e 6116) devem ser **soldados sem soquete** para preservar o
+  teto. Só a ROM — o chip original transplantado — usa soquete, de lâmina e perfil
+  baixo.
+- Pino torneado encaixa em soquete de lâmina, mas confira o aperto do contato; se
+  ficar frouxo, vale trocar o soquete do IC2 por um torneado.
 - Estabilidade: a placa fica em balanço apoiada só no soquete do IC2. Recomenda-se
   um **pé de apoio** (espaçador de nylon com base adesiva, ou bloco de espuma) sob
   o canto sudoeste do corpo.
-- Na foto de referência o IC2 está **soldado direto** na placa (sem soquete).
-  Nesse caso é preciso dessoldar a ROM e instalar um soquete torneado antes de
-  plugar o mod.
 
 ## J1 (sinais do TK-85)
 
