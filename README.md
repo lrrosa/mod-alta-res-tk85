@@ -80,10 +80,13 @@ O esquema publicado no artigo tem alguns erros, já **corrigidos** aqui. Não os
 
 ## Licença
 
-Nenhuma licença definida ainda. Escolha uma antes de publicar (por exemplo,
-[CERN-OHL-S](https://ohwr.org/cern_ohl_s_v2.txt) para o hardware e
-[MIT](https://opensource.org/license/mit) para eventuais scripts). Enquanto não houver
-um arquivo `LICENSE`, todos os direitos são reservados por padrão.
+Este projeto de hardware é licenciado sob a **CERN Open Hardware Licence v2 —
+Strongly Reciprocal** (`CERN-OHL-S-2.0`). Veja o arquivo [`LICENSE`](LICENSE).
+
+Conforme a seção 3.3 da licença, a localização da fonte (*Source Location*) deste
+projeto é: <https://github.com/lrrosa/mod-alta-res-tk85>. Se você distribuir produtos
+ou projetos derivados, mantenha as atribuições e disponibilize as fontes completas
+sob a mesma licença.
 
 > O material de referência original (o artigo da *Microhobby* e os datasheets dos
 > componentes) **não** é redistribuído aqui por ser protegido por direitos autorais.
