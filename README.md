@@ -5,9 +5,9 @@ gráfica para o **TK-85** (clone brasileiro do Sinclair ZX81), publicada por
 **Milton Maldonado Jr.** na revista *Microhobby*.
 
 O circuito acrescenta um framebuffer gráfico de alta resolução ao TK-85: três SRAMs
-6116 compartilham o espaço de endereços da ROM de caracteres original (2364) e são
-varridas por contadores sincronizados com a geração de vídeo, dando uma definição
-comparável à de micros bem mais caros da época.
+6116 compartilham o espaço de endereços da ROM principal (2364 — que contém o BASIC
+e também as tabelas de caracteres) e são varridas por contadores sincronizados com a
+geração de vídeo, dando uma definição comparável à de micros bem mais caros da época.
 
 > **Status:** esquema completo e verificado (ERC sem erros nem avisos). O layout de
 > PCB **ainda não** foi feito — veja [Estado do projeto](#estado-do-projeto).
@@ -40,8 +40,8 @@ Device, Connector, power) vêm das bibliotecas padrão do KiCad.
 
 | Bloco | CI | Função |
 |-------|----|--------|
-| Framebuffer | U1–U3 (6116) | 3× 2 KB de SRAM gráfica, no espaço da ROM de caracteres |
-| ROM de caracteres | U4 (2364) | ROM original do TK-85, remanejada para a placa do mod |
+| Framebuffer | U1–U3 (6116) | 3× 2 KB de SRAM gráfica, no espaço das tabelas de caracteres |
+| ROM principal | U4 (2364) | ROM original do TK-85 (BASIC + caracteres), remanejada para a placa do mod |
 | Contadores de vídeo | U5, U6 (74LS93) | Geram o endereço de varredura sincronizado ao vídeo |
 | Multiplexador | U7 (74LS157) | Chaveia endereço: CPU (RFSH=1) × contadores (RFSH=0) |
 | Decodificador | U8 (74LS138) | Seleciona qual das 3 SRAMs (`/CS0..2`) via A11/A12 |
@@ -49,8 +49,8 @@ Device, Connector, power) vêm das bibliotecas padrão do KiCad.
 | Ajuste de reset | RV1 (22K) | Trimpot de temporização do reset dos contadores (errata) |
 
 A conexão física com o TK-85 é feita por um **interposer pass-through**: os dois
-soquetes de 12 pinos (`IC2_PINS_1_12`, `IC2_PINS_13_24`) encaixam no soquete da ROM de
-caracteres (IC2) do TK-85, e a ROM 2364 encaixa por cima — cada pino do soquete é
+pentes de 12 pinos (`IC2_PINS_1_12`, `IC2_PINS_13_24`) encaixam no soquete da ROM
+principal (IC2) do TK-85, e a ROM 2364 encaixa por cima — cada pino do soquete é
 eletricamente o mesmo nó do pino correspondente da ROM.
 
 Descrição detalhada em [`docs/descricao-circuito.md`](docs/descricao-circuito.md).

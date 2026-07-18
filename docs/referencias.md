@@ -12,7 +12,8 @@ listado apenas para atribuição e para quem quiser buscá-lo nas fontes origina
 
 ## Datasheets dos componentes
 
-- ROM **2364** (ROM de máscara de 8 KB, usada como IC2 do TK-85).
+- ROM **2364** (ROM de máscara de 8 KB — a ROM principal do TK-85, IC2, com o
+  BASIC/sistema e as tabelas de caracteres).
 - SRAM **6116** (2 KB × 8) — as três memórias do framebuffer.
 - EPROM **2716** (mencionada no material do projeto; equivalente pino a pino da 2364 em
   alguns contextos).

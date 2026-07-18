@@ -6,11 +6,13 @@ abaixo foi padronizada nesta reconstrução.
 
 ## Ideia geral
 
-O TK-85 gera a imagem lendo, a cada caractere, uma tabela de 8 bytes na ROM de
-caracteres (IC2 = 2364). O mod intercepta essa ROM e acrescenta **três SRAMs 6116**
-(6 KB) mapeadas no mesmo espaço. Assim é possível redefinir dinamicamente as tabelas de
-caracteres (POKE nas 6116) e obter 256×192 pixels de alta resolução, sem consumir os
-16 KB de RAM do usuário.
+O IC2 do TK-85 é a **ROM principal** do micro (2364, 8 KB): contém o BASIC/sistema e
+também as tabelas de bitmap dos caracteres, lidas pela lógica de vídeo durante a
+geração da imagem (como no ZX81). O mod intercepta o soquete dessa ROM e acrescenta
+**três SRAMs 6116** (6 KB) mapeadas de forma a substituir as tabelas de caracteres
+durante a varredura. Assim é possível redefinir dinamicamente os bitmaps (POKE nas
+6116) e obter 256×192 pixels de alta resolução, sem consumir os 16 KB de RAM do
+usuário.
 
 O ponto delicado é o **endereçamento**: durante a geração da imagem, quem endereça as
 memórias não é a CPU, e sim contadores sincronizados ao vídeo.
@@ -23,9 +25,10 @@ soquete do IC2). `A9`/`A10` de cada SRAM vêm do multiplexador (`RAM_A9`, `RAM_A
 Seleção de chip por `/CS0`, `/CS1`, `/CS2` (do 74LS138). `/WE = WR` do Z80, `/OE = GND`
 (ver errata). Dados `D0–D7` compartilhados com a ROM e o soquete.
 
-### ROM de caracteres — U4 (2364)
-A ROM original do TK-85, remanejada para a placa do mod. Endereços `A0–A8` iguais aos das
-SRAMs; `A9–A12` vêm direto da CPU (soquete). `/CS = CS_ROM` (pino 20 do soquete).
+### ROM principal — U4 (2364)
+A ROM original do TK-85 (BASIC + tabelas de caracteres), remanejada para a placa do
+mod. Endereços `A0–A8` iguais aos das SRAMs; `A9–A12` vêm direto da CPU (soquete).
+`/CS = CS_ROM` (pino 20 do soquete).
 
 ### Contadores de vídeo — U5, U6 (74LS93)
 - `U5` (CI-A): recebe o **clock de vídeo** (`CLK_VID`) em CP0; Q0→CP1 forma o contador

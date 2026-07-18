@@ -48,7 +48,7 @@ corretas, confirmando que o pino 5 é o certo.
 
 Neste projeto: `U6` pino 9 (Q1) → `U7` pino 5 (I0b), na net `VQ1`.
 
-## 4. `/CS` da ROM de caracteres (montagem em placa)
+## 4. `/CS` da ROM principal (montagem em placa)
 
 Na montagem "teia de aranha" do artigo, a ROM continua no soquete do TK-85 e o pino 20
 dela (`/CS`, gerado pela lógica do próprio TK-85) não é tocado — por isso o artigo não
