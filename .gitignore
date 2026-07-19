@@ -16,3 +16,4 @@ _autosave-*
 Thumbs.db
 .DS_Store
 desktop.ini
+.history/

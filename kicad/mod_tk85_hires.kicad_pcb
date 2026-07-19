@@ -90,7 +90,7 @@
 		(descr "C, Disc series, Radial, pin pitch=5.00mm, diameter*width=5*2.5mm^2, Capacitor, http://cdn-reichelt.de/documents/datenblatt/B300/DS_KERKO_TC.pdf")
 		(tags "C Disc series Radial pin pitch 5.00mm diameter 5mm width 2.5mm Capacitor")
 		(property "Reference" "C4"
-			(at 2.5 -2.5 0)
+			(at 6.7 -0.15 0)
 			(layer "F.SilkS")
 			(uuid "99858482-f4ea-4fd0-b9ad-619e7c44f900")
 			(effects
@@ -278,7 +278,7 @@
 		(descr "C, Disc series, Radial, pin pitch=5.00mm, diameter*width=5*2.5mm^2, Capacitor, http://cdn-reichelt.de/documents/datenblatt/B300/DS_KERKO_TC.pdf")
 		(tags "C Disc series Radial pin pitch 5.00mm diameter 5mm width 2.5mm Capacitor")
 		(property "Reference" "C7"
-			(at 2.5 -2.5 0)
+			(at 7.5 0 0)
 			(layer "F.SilkS")
 			(uuid "3184185b-ba26-48a9-b6c8-9abbf84dffbf")
 			(effects
@@ -466,7 +466,7 @@
 		(descr "Through hole angled pin header, 1x08, 2.54mm pitch, 6mm pin length, single row")
 		(tags "Through hole angled pin header THT 1x08 2.54mm single row")
 		(property "Reference" "J1"
-			(at 4.385 -2.27 0)
+			(at 0 -2.8 0)
 			(layer "F.SilkS")
 			(uuid "98aea6ae-a32e-4284-90de-80b191ba4c31")
 			(effects
@@ -1649,7 +1649,7 @@
 		(descr "24-lead though-hole mounted DIP package, row spacing 15.24mm (600 mils), Socket")
 		(tags "THT DIP DIL PDIP 2.54mm 15.24mm 600mil Socket")
 		(property "Reference" "U2"
-			(at 7.62 -2.33 0)
+			(at 8.62 30.675 0)
 			(layer "F.SilkS")
 			(uuid "63a0c513-a1cc-4773-a1d6-8b22b10d0f7c")
 			(effects
@@ -2104,7 +2104,7 @@
 		(descr "14-lead though-hole mounted DIP package, row spacing 7.62mm (300 mils), Socket")
 		(tags "THT DIP DIL PDIP 2.54mm 7.62mm 300mil Socket")
 		(property "Reference" "U5"
-			(at 3.81 -2.33 0)
+			(at 3.71 6.615 0)
 			(layer "F.SilkS")
 			(uuid "39ae04fe-eace-4464-ad65-c006d9fa081f")
 			(effects
@@ -2465,7 +2465,7 @@
 		(descr "24-lead though-hole mounted DIP package, row spacing 15.24mm (600 mils), Socket")
 		(tags "THT DIP DIL PDIP 2.54mm 15.24mm 600mil Socket")
 		(property "Reference" "U1"
-			(at 7.62 -2.33 0)
+			(at 7.62 -2.525 0)
 			(layer "F.SilkS")
 			(uuid "5e3a0789-cc64-464c-a9f2-6c58d9efa136")
 			(effects
@@ -2920,7 +2920,7 @@
 		(descr "C, Disc series, Radial, pin pitch=5.00mm, diameter*width=5*2.5mm^2, Capacitor, http://cdn-reichelt.de/documents/datenblatt/B300/DS_KERKO_TC.pdf")
 		(tags "C Disc series Radial pin pitch 5.00mm diameter 5mm width 2.5mm Capacitor")
 		(property "Reference" "C3"
-			(at 2.5 -2.5 0)
+			(at 7 0.2 0)
 			(layer "F.SilkS")
 			(uuid "475b8229-9f16-44a0-bc95-35386465b6e0")
 			(effects
@@ -3108,7 +3108,7 @@
 		(descr "14-lead though-hole mounted DIP package, row spacing 7.62mm (300 mils), Socket")
 		(tags "THT DIP DIL PDIP 2.54mm 7.62mm 300mil Socket")
 		(property "Reference" "U9"
-			(at 3.81 -2.33 0)
+			(at 3.81 7.815 0)
 			(layer "F.SilkS")
 			(uuid "99b7f1cb-785c-4911-9f5a-e3e7ba30282a")
 			(effects
@@ -3473,7 +3473,7 @@
 		(descr "C, Disc series, Radial, pin pitch=5.00mm, diameter*width=5*2.5mm^2, Capacitor, http://cdn-reichelt.de/documents/datenblatt/B300/DS_KERKO_TC.pdf")
 		(tags "C Disc series Radial pin pitch 5.00mm diameter 5mm width 2.5mm Capacitor")
 		(property "Reference" "C9"
-			(at 2.5 -2.5 0)
+			(at 5.7 -2.5 0)
 			(layer "F.SilkS")
 			(uuid "c07adacd-e301-4191-9342-533a52cfce26")
 			(effects
@@ -3661,7 +3661,7 @@
 		(descr "CP, Radial series, Radial, pin pitch=2.50mm, diameter=6.3mm, height=7mm, Electrolytic Capacitor")
 		(tags "CP Radial series Radial pin pitch 2.50mm diameter 6.3mm height 7mm Electrolytic Capacitor")
 		(property "Reference" "C10"
-			(at 1.25 -4.4 0)
+			(at -0.75 2.4 0)
 			(layer "F.SilkS")
 			(uuid "57e4695f-ed8d-4dd4-b905-bddc53c15712")
 			(effects
@@ -5181,7 +5181,7 @@
 		(descr "16-lead though-hole mounted DIP package, row spacing 7.62mm (300 mils), Socket")
 		(tags "THT DIP DIL PDIP 2.54mm 7.62mm 300mil Socket")
 		(property "Reference" "U8"
-			(at 3.81 -2.33 0)
+			(at 4.01 -2.33 0)
 			(layer "F.SilkS")
 			(uuid "c4b7c6d9-a205-468d-87ee-1f5232b29aff")
 			(effects
@@ -5564,7 +5564,7 @@
 		(descr "Potentiometer, horizontal, Bourns 3266P, https://www.bourns.com/docs/Product-Datasheets/3266.pdf")
 		(tags "Potentiometer horizontal Bourns 3266P")
 		(property "Reference" "RV1"
-			(at -0.76 -2.065 0)
+			(at 0.64 2.74 0)
 			(layer "F.SilkS")
 			(uuid "3f051b6a-2ead-4f53-957d-790d0c9ac27f")
 			(effects
@@ -5842,7 +5842,7 @@
 		(descr "C, Disc series, Radial, pin pitch=5.00mm, diameter*width=5*2.5mm^2, Capacitor, http://cdn-reichelt.de/documents/datenblatt/B300/DS_KERKO_TC.pdf")
 		(tags "C Disc series Radial pin pitch 5.00mm diameter 5mm width 2.5mm Capacitor")
 		(property "Reference" "C8"
-			(at 2.5 -2.5 0)
+			(at 7.5 0 0)
 			(layer "F.SilkS")
 			(uuid "0533ee93-43b2-488d-8e3a-849e3fbfe923")
 			(effects
@@ -6030,7 +6030,7 @@
 		(descr "24-lead though-hole mounted DIP package, row spacing 15.24mm (600 mils), Socket")
 		(tags "THT DIP DIL PDIP 2.54mm 15.24mm 600mil Socket")
 		(property "Reference" "U3"
-			(at 7.62 -2.33 0)
+			(at 8.62 30.675 0)
 			(layer "F.SilkS")
 			(uuid "a2bcc72d-6763-4f2a-9501-ebf4c9138907")
 			(effects
@@ -6487,6 +6487,7 @@
 		(property "Reference" "IC2_PINS_1_12"
 			(at 0 -2.77 0)
 			(layer "F.SilkS")
+			(hide yes)
 			(uuid "16de3512-9a30-469e-a357-2bf3732c2247")
 			(effects
 				(font
@@ -6831,7 +6832,7 @@
 		(descr "C, Disc series, Radial, pin pitch=5.00mm, diameter*width=5*2.5mm^2, Capacitor, http://cdn-reichelt.de/documents/datenblatt/B300/DS_KERKO_TC.pdf")
 		(tags "C Disc series Radial pin pitch 5.00mm diameter 5mm width 2.5mm Capacitor")
 		(property "Reference" "C2"
-			(at 2.5 -2.5 0)
+			(at 6.7 -0.15 0)
 			(layer "F.SilkS")
 			(uuid "a739d763-a7c9-43d8-918c-793c9e8e16d3")
 			(effects
@@ -7019,7 +7020,7 @@
 		(descr "14-lead though-hole mounted DIP package, row spacing 7.62mm (300 mils), Socket")
 		(tags "THT DIP DIL PDIP 2.54mm 7.62mm 300mil Socket")
 		(property "Reference" "U6"
-			(at 3.81 -2.33 0)
+			(at 3.81 7.715 0)
 			(layer "F.SilkS")
 			(uuid "a19cebf6-13a6-4a3d-8e33-32bafd907e70")
 			(effects
@@ -7382,6 +7383,7 @@
 		(property "Reference" "IC2_PINS_13_24"
 			(at 0 -2.77 0)
 			(layer "F.SilkS")
+			(hide yes)
 			(uuid "16a2466d-061c-4957-b923-12a7b96a2463")
 			(effects
 				(font
@@ -7726,7 +7728,7 @@
 		(descr "C, Disc series, Radial, pin pitch=5.00mm, diameter*width=5*2.5mm^2, Capacitor, http://cdn-reichelt.de/documents/datenblatt/B300/DS_KERKO_TC.pdf")
 		(tags "C Disc series Radial pin pitch 5.00mm diameter 5mm width 2.5mm Capacitor")
 		(property "Reference" "C5"
-			(at 2.5 -2.5 0)
+			(at 6.7 -0.15 0)
 			(layer "F.SilkS")
 			(uuid "2aa43e51-d2a6-40c5-a690-974ef1126ff9")
 			(effects
@@ -7737,7 +7739,7 @@
 			)
 		)
 		(property "Value" "C_Disc_D5.0mm_W2.5mm_P5.00mm"
-			(at 2.5 2.5 0)
+			(at 1 -4.65 0)
 			(layer "F.Fab")
 			(uuid "55b17886-5c33-4e21-b392-8d6306ba88b5")
 			(effects
@@ -7914,7 +7916,7 @@
 		(descr "16-lead though-hole mounted DIP package, row spacing 7.62mm (300 mils), Socket")
 		(tags "THT DIP DIL PDIP 2.54mm 7.62mm 300mil Socket")
 		(property "Reference" "U7"
-			(at 3.81 -2.33 0)
+			(at 4.21 7.89 0)
 			(layer "F.SilkS")
 			(uuid "a679d97a-833a-41eb-95fa-1d60749fd2d8")
 			(effects
@@ -8485,7 +8487,7 @@
 		(descr "C, Disc series, Radial, pin pitch=5.00mm, diameter*width=5*2.5mm^2, Capacitor, http://cdn-reichelt.de/documents/datenblatt/B300/DS_KERKO_TC.pdf")
 		(tags "C Disc series Radial pin pitch 5.00mm diameter 5mm width 2.5mm Capacitor")
 		(property "Reference" "C1"
-			(at 2.5 -2.5 0)
+			(at 6.7 -0.15 0)
 			(layer "F.SilkS")
 			(uuid "024a472e-d571-4997-be8b-fda2f0de75d9")
 			(effects
@@ -9221,8 +9223,8 @@
 		(layer "Edge.Cuts")
 		(uuid "65ff0951-529e-42ff-bfb2-28e0441b1fd1")
 	)
-	(gr_text "frente do TK-85 (teclado) v"
-		(at 112 154.2 0)
+	(gr_text "frente do TK-85"
+		(at 125.8 158.1 0)
 		(layer "F.SilkS")
 		(uuid "f7b6fd29-8063-4b90-830f-890de148cd3c")
 		(effects
@@ -9232,19 +9234,8 @@
 			)
 		)
 	)
-	(gr_text "encaixa no soquete do IC2"
-		(at 150 81.8 0)
-		(layer "F.SilkS")
-		(uuid "9e54100b-f15a-4410-8e6d-377f8d72a149")
-		(effects
-			(font
-				(size 1 1)
-				(thickness 0.15)
-			)
-		)
-	)
-	(gr_text "Z80 ->"
-		(at 181 115.5 0)
+	(gr_text "Z80>"
+		(at 157.6 81.5 0)
 		(layer "F.SilkS")
 		(uuid "e1292e05-8992-4e8b-a789-9ae4fb58ea36")
 		(effects
@@ -9254,8 +9245,19 @@
 			)
 		)
 	)
-	(gr_text "MOD ALTA RES TK85"
-		(at 123 121.5 0)
+	(gr_text "encaixa no soquete do IC2"
+		(at 139.9 100.5 90)
+		(layer "F.SilkS")
+		(uuid "9e54100b-f15a-4410-8e6d-377f8d72a149")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(gr_text "MOD ALTA RES TK85 MMJ"
+		(at 118.5 138.5 90)
 		(layer "F.SilkS")
 		(uuid "3a9f76e9-5471-4724-b16a-5a637b24e68e")
 		(effects
@@ -9263,6 +9265,18 @@
 				(size 1.5 1.5)
 				(thickness 0.22)
 			)
+		)
+	)
+	(gr_text "J1 (pino 1 = lado do Z80)\n1 A14     5 RFSH\n2 A15     6 WR\n3 RAM_CS  7 CLK_60\n4 MREQ    8 CLK_VID"
+		(at 108.5 141.3 0)
+		(layer "B.SilkS")
+		(uuid "18a7c9ff-b4b5-410d-993c-281fbfb130a1")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify left top mirror)
 		)
 	)
 	(segment
