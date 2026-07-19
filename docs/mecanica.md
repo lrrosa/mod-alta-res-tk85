@@ -14,7 +14,7 @@ Tudo é medido em **mm relativos ao centro do IC2** (a ROM principal), com
 
 ## Contorno (forma de T)
 
-- **Língua** (sobre o IC2): x −10,5…+10 / y −20…+17,5 — carrega os dois pentes do
+- **Língua** (sobre o IC2): x −11,1…+10 / y −20…+17,5 — carrega os dois pentes do
   interposer, `U9` e `U6`.
 - **Corpo**: x −70…+35,6 / y +17,5…+59 — paira sobre as fileiras de TTL (IC17…) e
   de RAM (IC30–37) do TK-85.
@@ -61,6 +61,19 @@ região ocupada pela placa do mod.
 - Estabilidade: a placa fica em balanço apoiada só no soquete do IC2. Recomenda-se
   um **pé de apoio** (espaçador de nylon com base adesiva, ou bloco de espuma) sob
   o canto sudoeste do corpo.
+
+## Roteamento
+
+Duas camadas, roteado por autorouter (Freerouting 2.2.4) com acabamento manual,
+DRC do KiCad **zerado** (0 violações elétricas, 0 pads desconectados):
+
+- Trilhas de sinal **0,25 mm**; `+5V` e `GND` **0,6 mm**; isolamento mínimo
+  **0,13 mm**; vias 0,6/0,3 mm — tudo dentro da capacidade de qualquer fabricante
+  comum de PCB (limite típico 0,127 mm).
+- `GND` é roteado como trilha **e** reforçado por pours nas duas faces.
+- A checagem `starved_thermal` foi rebaixada para aviso: quatro pads de GND ficam
+  com um único raio térmico da zona, mas todos têm também conexão plena por
+  trilha — eletricamente sólidos; o alívio térmico ainda ajuda na soldagem.
 
 ## J1 (sinais do TK-85)
 

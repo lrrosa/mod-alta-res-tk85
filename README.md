@@ -20,7 +20,7 @@ geração de vídeo, dando uma definição comparável à de micros bem mais car
 mod-alta-res-tk85/
 ├── kicad/                     Projeto KiCad 10
 │   ├── mod_tk85_hires.kicad_sch    Esquema (folha única)
-│   ├── mod_tk85_hires.kicad_pcb    Placa (contorno + posicionamento; sem rotear)
+│   ├── mod_tk85_hires.kicad_pcb    Placa (roteada, 2 camadas, DRC limpo)
 │   ├── mod_tk85_hires.kicad_pro    Projeto
 │   ├── sym-lib-table               Tabela de símbolos (caminhos ${KIPRJMOD})
 │   └── sym/                        Símbolos personalizados (ROM 2364, SRAM 6116)
@@ -74,7 +74,9 @@ O artigo tem alguns erros, omissões e ambiguidades, já **corrigidos** aqui. N�
 - [x] BOM ([`docs/bom.csv`](docs/bom.csv))
 - [x] PCB: contorno (medido sobre a placa real) e posicionamento — ver
       [`docs/mecanica.md`](docs/mecanica.md)
-- [ ] PCB: roteamento
+- [x] PCB: roteamento completo em 2 camadas, DRC zerado (0 violações elétricas,
+      0 pads desconectados)
+- [ ] Revisão visual do layout / silk (cosmético)
 - [ ] Montagem e teste em hardware real
 
 ## Créditos
