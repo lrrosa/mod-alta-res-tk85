@@ -10006,7 +10006,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Potentiometer_THT:Potentiometer_Bourns_3266P_Horizontal"
+		(property "Footprint" "Potentiometer_THT:Potentiometer_Bourns_3266W_Vertical"
 			(at 240.03 234.95 0)
 			(effects
 				(font

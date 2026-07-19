@@ -62,6 +62,39 @@ região ocupada pela placa do mod.
   um **pé de apoio** (espaçador de nylon com base adesiva, ou bloco de espuma) sob
   o canto sudoeste do corpo.
 
+## Montagem da ROM sobre a língua (interposer)
+
+Os dois pentes do interposer estão em geometria DIP-24 (600 mil) e carregam
+**exatamente as mesmas nets, pino a pino, do soquete `U4`** — consequência do
+interposer pass-through. Ou seja: a ROM 2364 pode ser encaixada **diretamente
+sobre a língua**, em cima de `U9` e `U6`, dispensando o soquete `U4` (que fica
+despopulado; **nunca** popular os dois ao mesmo tempo com duas ROMs).
+
+A peça que realiza isso é um **soquete DIP-24 torneado com terminais wire-wrap**
+(postes de 2 ou 3 níveis, 10–17 mm): o corpo fica no topo da placa como soquete da
+ROM, e os postes atravessam a placa e viram os pinos macho do interposer por baixo.
+Exemplos: Mill-Max série 123 (123-93-624-41-001000), Preci-Dip 110-93-624-41-001000;
+como alternativa mais fácil de encontrar, **duas barras SIP 1×12 torneadas de
+terminal longo** ("round pin female header, wire-wrap/long pin") cortadas na medida.
+
+Alturas nessa configuração:
+
+- Assento do soquete wire-wrap: ~4,5–5 mm — os CIs `U9`/`U6` soldados (~4,3 mm)
+  passam por baixo **no limite**. Para folga confortável, empilhar um soquete
+  torneado comum de perfil baixo sobre o wire-wrap (barriga da ROM a ~8 mm).
+- Topo da ROM nessa pilha: ~13–14 mm sobre a placa do mod — dentro do teto de
+  ~20–21 mm do gabinete.
+- Por baixo, os postes atravessam o soquete-espaçador e entram no soquete original
+  do IC2. Postes wire-wrap são quadrados (~0,64 mm): encaixam bem em soquetes de
+  **lâmina** (o espaçador e o soquete original do TK-85); evite usar soquete
+  torneado como espaçador nesse caso, pois o furo torneado é para pino redondo.
+
+## RV1 — ajuste por cima
+
+`RV1` usa o Bourns **3266W** (ajuste pelo topo). A variante lateral (3266P) foi
+descartada porque o parafuso ficava voltado para o interior da placa, inacessível
+com os soquetes vizinhos populados.
+
 ## Roteamento
 
 Duas camadas, roteado por autorouter (Freerouting 2.2.4) com acabamento manual,
