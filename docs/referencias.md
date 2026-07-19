@@ -14,10 +14,10 @@ listado apenas para atribuição e para quem quiser buscá-lo nas fontes origina
 ## Datasheets dos componentes
 
 - ROM **2364** (ROM de máscara de 8 KB — a ROM principal do TK-85, IC2, com o
-  BASIC/sistema e as tabelas de caracteres).
-- SRAM **6116** (2 KB × 8) — as três memórias do framebuffer.
-- EPROM **2716** (mencionada no material do projeto; equivalente pino a pino da 2364 em
-  alguns contextos).
+  BASIC/sistema e as tabelas de caracteres). Datasheet MOS 2364 (fev. 1980):
+  <https://archive.org/details/mos_2364_rom_feb_1980>
+- SRAM **6116** (2 KB × 8) — as três memórias do framebuffer. Datasheet Renesas
+  6116SA/LA: <https://www.renesas.com/en/document/dst/6116sala-data-sheet>
 - Famílias TTL **74LS00, 74LS93, 74LS138, 74LS157** — datasheets dos respectivos
   fabricantes.
 
@@ -26,7 +26,8 @@ listado apenas para atribuição e para quem quiser buscá-lo nas fontes origina
 - **TK-85 revisão K** — esquema da placa do TK-85, **redesenhado por Daniel José
   Viana ("Danjovic")**; não é o esquema original de fábrica. Usado como referência
   para localizar os sinais tomados por `J1`: A14, A15, MREQ, RFSH, WR, clock de
-  vídeo e clock de 60 Hz.
+  vídeo e clock de 60 Hz. Disponível no acervo do Datassette:
+  <https://datassette.org/pt-br/manuais/microdigital-eletronica/tk82c-tk83-tk85/hardware/br-brasil/tk85-esquema-eletrico-rev-k>
 
 ## Nota sobre direitos autorais
 
