@@ -77,13 +77,17 @@ Exemplos: Mill-Max série 123 (123-93-624-41-001000), Preci-Dip 110-93-624-41-00
 como alternativa mais fácil de encontrar, **duas barras SIP 1×12 torneadas de
 terminal longo** ("round pin female header, wire-wrap/long pin") cortadas na medida.
 
-Alturas nessa configuração:
+Alturas nessa configuração (**medidas sobre a placa-mãe do TK-85**; topo da placa
+do mod fica a ~11,6–12,6 mm):
 
-- Assento do soquete wire-wrap: ~4,5–5 mm — os CIs `U9`/`U6` soldados (~4,3 mm)
-  passam por baixo **no limite**. Para folga confortável, empilhar um soquete
-  torneado comum de perfil baixo sobre o wire-wrap (barriga da ROM a ~8 mm).
-- Topo da ROM nessa pilha: ~13–14 mm sobre a placa do mod — dentro do teto de
-  ~20–21 mm do gabinete.
+- Assento do soquete wire-wrap: ~4,5–5 mm sobre a placa do mod — os CIs
+  `U9`/`U6` soldados (~4,3 mm) passam por baixo **no limite** (folga 0,2–0,7 mm).
+- Topo da ROM: 11,6–12,6 + 4,5–5 + 4,5 ≈ **20,6–22 mm** — **igual ou acima do
+  teto de ~20–21 mm**. Com um soquete extra empilhado (para dar folga sobre
+  U9/U6), vai a ~24 mm — **não cabe de jeito nenhum**.
+- **Conclusão: com o teto medido, esta opção é desaconselhada.** Fica registrada
+  pela equivalência elétrica (vale para gabinetes modificados ou uso sem tampa);
+  a montagem recomendada é a ROM no soquete `U4` (topo a ~19–20,6 mm).
 - Por baixo, os postes atravessam o soquete-espaçador e entram no soquete original
   do IC2. Postes wire-wrap são quadrados (~0,64 mm): encaixam bem em soquetes de
   **lâmina** (o espaçador e o soquete original do TK-85); evite usar soquete
@@ -94,6 +98,15 @@ Alturas nessa configuração:
 `RV1` usa o Bourns **3266W** (ajuste pelo topo). A variante lateral (3266P) foi
 descartada porque o parafuso ficava voltado para o interior da placa, inacessível
 com os soquetes vizinhos populados.
+
+**Altura:** o 3266W tem **8,26 mm** de corpo — topo a ~19,9–20,9 mm sobre a
+placa-mãe, no **mesmo grupo crítico da ROM** frente ao teto de ~20–21 mm. Antes de
+soldar, faça um ensaio a seco: com a pilha do interposer montada e a tampa
+fechando, é preciso haver **≥ 8,3 mm** livres acima do topo da placa do mod na
+região do RV1. Se faltar, os planos B são: (a) trocar por um trimpot de volta
+única com ajuste por cima e ~5 mm de altura (ex.: Piher PT-6-V — exige retrabalho
+dos pads naquele canto), ou (b) montar o trimpot fora da placa, por 3 fios curtos
+nos pads (estilo "teia de aranha", fiel ao artigo).
 
 ## Roteamento
 
