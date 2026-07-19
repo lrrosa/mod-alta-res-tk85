@@ -466,7 +466,7 @@
 		(descr "Through hole angled pin header, 1x08, 2.54mm pitch, 6mm pin length, single row")
 		(tags "Through hole angled pin header THT 1x08 2.54mm single row")
 		(property "Reference" "J1"
-			(at 0 -2.8 0)
+			(at -1.5 -2.8 0)
 			(layer "F.SilkS")
 			(uuid "98aea6ae-a32e-4284-90de-80b191ba4c31")
 			(effects
@@ -2465,7 +2465,7 @@
 		(descr "24-lead though-hole mounted DIP package, row spacing 15.24mm (600 mils), Socket")
 		(tags "THT DIP DIL PDIP 2.54mm 15.24mm 600mil Socket")
 		(property "Reference" "U1"
-			(at 7.62 -2.525 0)
+			(at 7.62 -2.725 0)
 			(layer "F.SilkS")
 			(uuid "5e3a0789-cc64-464c-a9f2-6c58d9efa136")
 			(effects
@@ -3473,7 +3473,7 @@
 		(descr "C, Disc series, Radial, pin pitch=5.00mm, diameter*width=5*2.5mm^2, Capacitor, http://cdn-reichelt.de/documents/datenblatt/B300/DS_KERKO_TC.pdf")
 		(tags "C Disc series Radial pin pitch 5.00mm diameter 5mm width 2.5mm Capacitor")
 		(property "Reference" "C9"
-			(at 5.7 -2.5 0)
+			(at 5.7 -2.6 0)
 			(layer "F.SilkS")
 			(uuid "c07adacd-e301-4191-9342-533a52cfce26")
 			(effects
@@ -9223,8 +9223,19 @@
 		(layer "Edge.Cuts")
 		(uuid "65ff0951-529e-42ff-bfb2-28e0441b1fd1")
 	)
+	(gr_text "1"
+		(at 116 158 0)
+		(layer "F.SilkS")
+		(uuid "215a5e55-5cde-4848-b674-d238f47da0ad")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
 	(gr_text "frente do TK-85"
-		(at 125.8 158.1 0)
+		(at 125.6 158.1 0)
 		(layer "F.SilkS")
 		(uuid "f7b6fd29-8063-4b90-830f-890de148cd3c")
 		(effects
@@ -9268,7 +9279,7 @@
 		)
 	)
 	(gr_text "J1 (pino 1 = lado do Z80)\n1 A14     5 RFSH\n2 A15     6 WR\n3 RAM_CS  7 CLK_60\n4 MREQ    8 CLK_VID"
-		(at 108.5 141.3 0)
+		(at 113.5 143 0)
 		(layer "B.SilkS")
 		(uuid "18a7c9ff-b4b5-410d-993c-281fbfb130a1")
 		(effects

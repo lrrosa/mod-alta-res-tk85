@@ -8,7 +8,8 @@ listado apenas para atribuição e para quem quiser buscá-lo nas fontes origina
 
 - **"Alta-Resolução no TK-85"** (Partes I, II e III) — Milton Maldonado Jr., revista
   *Microhobby*. É a descrição do circuito e do procedimento de montagem/ajuste que este
-  projeto implementa.
+  projeto implementa. Disponível para consulta no acervo do Datassette:
+  <https://datassette.org/pt-br/revistas/informatica/br-brasil/microhobby/projetos/alta-resolucao-no-tk-85>
 
 ## Datasheets dos componentes
 

@@ -24,7 +24,8 @@ mod-alta-res-tk85/
 │   ├── mod_tk85_hires.kicad_pro    Projeto
 │   ├── sym-lib-table               Tabela de símbolos (caminhos ${KIPRJMOD})
 │   └── sym/                        Símbolos personalizados (ROM 2364, SRAM 6116)
-├── esquemas/                  Esquema exportado (PDF e SVG)
+├── esquemas/                  Esquema e placa exportados (PDF e SVG)
+├── fabricacao/                Gerbers + furação (zip pronto para fábrica)
 ├── docs/                      Documentação, errata, BOM, mecânica
 └── README.md
 ```
@@ -75,8 +76,9 @@ O artigo tem alguns erros, omissões e ambiguidades, já **corrigidos** aqui. N�
 - [x] PCB: contorno (medido sobre a placa real) e posicionamento — ver
       [`docs/mecanica.md`](docs/mecanica.md)
 - [x] PCB: roteamento completo em 2 camadas, DRC zerado (0 violações elétricas,
-      0 pads desconectados)
-- [ ] Revisão visual do layout / silk (cosmético)
+      0 pads desconectados); silk revisado
+- [x] Gerbers e furação prontos para fabricação
+      ([`fabricacao/`](fabricacao/))
 - [ ] Montagem e teste em hardware real
 
 ## Créditos
