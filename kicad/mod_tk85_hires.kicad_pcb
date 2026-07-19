@@ -9208,7 +9208,7 @@
 			)
 		)
 	)
-	(gr_text "J1 (pino 1 = lado do Z80)\n1 A14     5 RFSH\n2 A15     6 WR\n3 RAM_CS  7 CLK_60\n4 MREQ    8 CLK_VID"
+	(gr_text "J1 (pino 1 = lado do Z80)\n1 A14      5 RFSH\n2 A15      6 WR\n3 RAM_CS  7 CLK_60\n4 MREQ    8 CLK_VID"
 		(at 113.5 143 0)
 		(layer "B.SilkS")
 		(uuid "18a7c9ff-b4b5-410d-993c-281fbfb130a1")
