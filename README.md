@@ -9,8 +9,9 @@ O circuito acrescenta um framebuffer gráfico de alta resolução ao TK-85: trê
 e também as tabelas de caracteres) e são varridas por contadores sincronizados com a
 geração de vídeo, dando uma definição comparável à de micros bem mais caros da época.
 
-> **Status:** esquema completo e verificado (ERC sem erros nem avisos). O layout de
-> PCB **ainda não** foi feito — veja [Estado do projeto](#estado-do-projeto).
+> **Status:** esquema verificado (ERC 0/0), PCB roteada (DRC 0/0) e Gerbers prontos
+> para fabricação — falta montar e testar em hardware real.
+> Veja [Estado do projeto](#estado-do-projeto).
 
 ---
 
